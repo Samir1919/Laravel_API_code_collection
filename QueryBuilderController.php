@@ -11,6 +11,12 @@ class BuilderController extends Controller
 {
 
    
+    public function AllTable() {
+        $tables = $tables = DB::select('SHOW TABLES');
+        // array_map('reset', \DB::select('SHOW TABLES'));
+        return $tables;
+    }
+   
     public function Rows()
     {
         $result = DB::table('details')->where('name', 'Sami')->first();
