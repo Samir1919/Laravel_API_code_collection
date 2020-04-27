@@ -12,7 +12,7 @@ class BuilderController extends Controller
 
    
     public function AllTable() {
-        $tables = $tables = DB::select('SHOW TABLES');
+        $tables = DB::select('SHOW TABLES');
         // array_map('reset', \DB::select('SHOW TABLES'));
         return $tables;
     }
