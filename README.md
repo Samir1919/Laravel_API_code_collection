@@ -1,6 +1,7 @@
 # Laravel_LumenAPI_code_collection
 
 #route example
+
 $router->get('/get','DetailsController@DetailsSelect');
 
 $router->post('/post','DetailsController@DetailsCreate');
