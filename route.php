@@ -1,19 +1,9 @@
 <?php
 
-// $router->get('/get','DetailsController@DetailsSelect');
+// $router->get('/get','NameOfController@FunctionOfThisContoller');
 
-// $router->post('/post','DetailsController@DetailsCreate');
+// $router->post('/post','NameOfController@FunctionOfThisContoller');
 
-// $router->put('/put','DetailsController@DetailsUpdate');
+// $router->put('/put','NameOfController@FunctionOfThisContoller');
 
-// $router->delete('/delete','DetailsController@DetailsDelete');
-
-$router->get('/get','BuilderController@GetAllData');
-
-$router->get('/getcolumn','BuilderController@GetAllColumn');
-
-$router->post('/post','BuilderController@CreateData');
-
-$router->put('/put','BuilderController@UpdateData');
-
-$router->delete('/delete','BuilderController@DeleteData');
+// $router->delete('/delete','NameOfController@FunctionOfThisContoller');
