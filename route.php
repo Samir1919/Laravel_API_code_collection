@@ -1,16 +1,16 @@
-$router->get('/get','DetailsController@DetailsSelect');
+<?php
 
-$router->post('/post','DetailsController@DetailsCreate');
+// $router->get('/get','DetailsController@DetailsSelect');
 
-$router->put('/put','DetailsController@DetailsUpdate');
+// $router->post('/post','DetailsController@DetailsCreate');
 
-$router->delete('/delete','DetailsController@DetailsDelete');
+// $router->put('/put','DetailsController@DetailsUpdate');
 
-
+// $router->delete('/delete','DetailsController@DetailsDelete');
 
 $router->get('/get','BuilderController@GetAllData');
 
-$router->get('/get','BuilderController@GetAllColumn');
+$router->get('/getcolumn','BuilderController@GetAllColumn');
 
 $router->post('/post','BuilderController@CreateData');
 
