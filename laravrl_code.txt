@@ -1,0 +1,4 @@
+laravel er resource folder er view te dukte:
+view('file / foler name extntion sara tarpor . dot dia file name ' , chaile koma dia onno function deya jabe);
+example : view('category.index', compact('categories'));
+
