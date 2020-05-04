@@ -1,4 +1,35 @@
-laravel er resource folder er view te dukte:
+//
+laravel er resource folder er view te dukte and single data view te patate:
 view('file / foler name extntion sara tarpor . dot dia file name ' , chaile koma dia onno function deya jabe);
 example : view('category.index', compact('categories'));
 
+//
+multiple data view te patate
+$view->with(compact('persons', 'ms'));
+
+//
+My Function Becomes very Larger so i have decided to make the line as very simple
+
+public function index()
+    {
+        $activePost = Post::where('status','=','active')->get()->count();
+
+        $inActivePost = Post::where('status','=','inactive')->get()->count();
+
+        $yesterdayPostActive = Post::whereDate('created_at', Carbon::now()->addDay(-1))->get()->count();
+
+        $todayPostActive = Post::whereDate('created_at', Carbon::now()->addDay(0))->get()->count();
+
+        $viewShareVars = array_keys(get_defined_vars());
+
+        return view('dashboard.index',compact($viewShareVars));
+    }
+the native php function get_defined_vars() get all the defined variables from the function
+
+and array_keys will grab the variable names
+
+so in your view you can access all the declared variable inside the function
+
+as {{$todayPostActive}}
+
+//
